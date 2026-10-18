@@ -57,7 +57,7 @@
   .card p { color: var(--muted); font-size: 15px; margin: 0 0 14px; flex: 1; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
   .tags span { background: var(--tag); font-size: 12px; padding: 3px 8px; border-radius: 6px; color: var(--muted); }
-  .card .links { display: flex; gap: 16px; font-size: 14px; font-weight: 600; }
+  .card .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; font-weight: 600; }
   .card .links .soon { color: var(--muted); font-weight: 500; }
   .contact { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
   footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; text-align: center; }
@@ -125,16 +125,17 @@
 <footer>© <span id="yr"></span> Muhammed Anshaj K · Built with GitHub Pages</footer>
 
 <script>
-// Edit this list to add or update projects. Leave a link as "" to show "Coming soon".
+// Edit this list to add or update projects. Leave repo/demo as "" and omit files to show "Coming soon".
+// files: [label, direct download URL] pairs, shown as download buttons.
 const projects = [
   { cat: "Financial Modelling", title: "Three-Statement Financial Model",
     desc: "Five-year linked income statement, balance sheet and cash flow forecast with base, upside and downside scenarios and automated balance checks.",
     tags: ["Excel", "Python", "Scenario Analysis"], repo: "https://github.com/MuhammedAnshajK/three-statement-model", demo: "",
-    file: "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/three_statement_model.xlsx" },
+    files: [["Excel", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/three_statement_model.xlsx"], ["PDF", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/three_statement_model.pdf"], ["Script", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/build_model.py"]] },
   { cat: "Valuation", title: "DCF & Comparable Companies Valuation",
     desc: "DCF (perpetuity growth and exit multiple) with a CAPM-based WACC, sensitivity table and trading comparables, summarised in a football field chart.",
     tags: ["Excel", "Python", "Valuation"], repo: "https://github.com/MuhammedAnshajK/dcf-valuation", demo: "",
-    file: "https://github.com/MuhammedAnshajK/dcf-valuation/raw/main/dcf_valuation.xlsx" },
+    files: [["Excel", "https://github.com/MuhammedAnshajK/dcf-valuation/raw/main/dcf_valuation.xlsx"], ["PDF", "https://github.com/MuhammedAnshajK/dcf-valuation/raw/main/dcf_valuation.pdf"], ["Script", "https://github.com/MuhammedAnshajK/dcf-valuation/raw/main/build_model.py"]] },
   { cat: "Financial Statements", title: "Automated Financial Statement Preparation",
     desc: "Turns a raw trial balance into formatted P&L, balance sheet and notes using Python mapping rules.",
     tags: ["Python", "pandas", "openpyxl"], repo: "", demo: "" },
@@ -164,7 +165,7 @@ function render() {
       <h3>${p.title}</h3>
       <p>${p.desc}</p>
       <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
-      <div class="links">${(p.repo || p.demo || p.file) ? link(p.repo, "View project →") + link(p.file, "Download Excel ↓") + link(p.demo, "Live demo →") : '<span class="soon">Coming soon</span>'}</div>
+      <div class="links">${(p.repo || p.demo || p.files) ? link(p.repo, "View project →") + link(p.demo, "Live demo →") + (p.files || []).map(([n, u]) => link(u, n + " ↓")).join("") : '<span class="soon">Coming soon</span>'}</div>
     </article>`).join("");
   filters.innerHTML = cats.map(c => `<button class="${c === active ? "active" : ""}" data-c="${c}">${c}</button>`).join("");
 }
