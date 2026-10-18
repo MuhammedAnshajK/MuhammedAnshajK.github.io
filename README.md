@@ -1,0 +1,26 @@
+# Muhammed Anshaj K · Finance & Automation Portfolio
+
+Live site: **https://muhammedanshajk.github.io**
+
+A portfolio of finance projects built with Excel, Python and Power BI.
+
+## Projects
+
+| Area | Project | Tools | Status |
+|---|---|---|---|
+| Financial Modelling | Three-Statement Financial Model | Excel | Coming soon |
+| Valuation | DCF & Comparable Companies Valuation | Excel, Python | Coming soon |
+| Financial Statements | Automated Financial Statement Preparation | Python, pandas | Coming soon |
+| Consolidation | Multi-Entity Consolidation Workflow | Python, Power Query | Coming soon |
+| Automation | Month-End Close Automation | Python | Coming soon |
+| Dashboards | Finance KPI Dashboard | Power BI, DAX | Coming soon |
+
+## Updating the site
+
+All project cards live in the `projects` list near the bottom of `index.html`.
+To publish a project, add its repository URL to `repo` (and a Power BI / NovyPro link to `demo` if it has one).
+Cards with no links show "Coming soon".
+
+## Tech
+
+Plain HTML, CSS and JavaScript, hosted free on GitHub Pages. No build step.

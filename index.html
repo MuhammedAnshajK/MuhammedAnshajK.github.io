@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammed Anshaj K | Finance & Automation Portfolio</title>
+<meta name="description" content="Portfolio of financial modelling, valuation, consolidation, process automation and KPI dashboard projects built with Excel, Python and Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f8fa; --surface: #ffffff; --text: #14181f; --muted: #5b6472;
+    --border: #e3e6eb; --accent: #0f6e5a; --accent-soft: #e4f2ee; --tag: #eef1f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e1116; --surface: #161b22; --text: #e8ecf1; --muted: #9aa4b2;
+      --border: #262d37; --accent: #3fbf9b; --accent-soft: #15302a; --tag: #1f2630;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  nav { position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); z-index: 10; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  nav .brand { font-weight: 700; color: var(--text); }
+  nav .links a { margin-left: 22px; color: var(--muted); font-size: 15px; }
+  header { padding: 80px 0 56px; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+  h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.15; margin: 10px 0 18px; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 680px; }
+  .cta { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; font-weight: 600; font-size: 15px;
+    border: 1px solid var(--accent); }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn:hover { text-decoration: none; opacity: .9; }
+  section { padding: 48px 0; }
+  h2 { font-size: 26px; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills span { background: var(--surface); border: 1px solid var(--border); padding: 6px 12px; border-radius: 999px; font-size: 14px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .filters button { font: inherit; font-size: 14px; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+  .filters button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 22px;
+    display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+  .card .cat { font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft);
+    padding: 3px 10px; border-radius: 999px; align-self: flex-start; }
+  .card h3 { font-size: 18px; margin: 14px 0 8px; }
+  .card p { color: var(--muted); font-size: 15px; margin: 0 0 14px; flex: 1; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .tags span { background: var(--tag); font-size: 12px; padding: 3px 8px; border-radius: 6px; color: var(--muted); }
+  .card .links { display: flex; gap: 16px; font-size: 14px; font-weight: 600; }
+  .card .links .soon { color: var(--muted); font-weight: 500; }
+  .contact { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; text-align: center; }
+  @media (max-width: 600px) {
+    nav .links a { margin-left: 14px; font-size: 14px; }
+    header { padding: 48px 0 32px; }
+    .wrap { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Muhammed Anshaj K</a>
+    <div class="links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  </div>
+</nav>
+
+<header class="wrap">
+  <div class="eyebrow">Finance · Analytics · Automation</div>
+  <h1>Financial models, valuations and dashboards, built to automate the busywork.</h1>
+  <p class="lead">I build financial models, prepare statements, run valuations and design consolidation and reporting workflows, using Excel, Python and Power BI to make them faster and more reliable.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">View projects</a>
+    <a class="btn" href="https://github.com/MuhammedAnshajK">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/">LinkedIn</a>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Each project has its own repository with the model or code, sample data, and a write-up.</p>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills & tools</h2>
+    <p class="sub">What I use day to day.</p>
+    <div class="skills">
+      <span>Financial Modelling</span><span>3-Statement Models</span><span>DCF & Comparables Valuation</span>
+      <span>Financial Statement Preparation</span><span>Group Consolidation</span><span>Variance Analysis</span>
+      <span>Excel (Advanced, Power Query)</span><span>Python (pandas, openpyxl)</span><span>Power BI & DAX</span>
+      <span>SQL</span><span>Process Automation</span><span>KPI Design</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let's talk</h2>
+      <p class="sub" style="margin-bottom:16px">Open to finance, FP&A and financial analytics roles and projects.</p>
+      <div class="cta" style="margin-top:0">
+        <a class="btn primary" href="https://www.linkedin.com/">Connect on LinkedIn</a>
+        <a class="btn" href="https://github.com/MuhammedAnshajK">Browse GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Muhammed Anshaj K · Built with GitHub Pages</footer>
+
+<script>
+// Edit this list to add or update projects. Leave a link as "" to show "Coming soon".
+const projects = [
+  { cat: "Financial Modelling", title: "Three-Statement Financial Model",
+    desc: "Integrated income statement, balance sheet and cash flow model with scenario toggles and a debt schedule.",
+    tags: ["Excel", "Scenario Analysis"], repo: "", demo: "" },
+  { cat: "Valuation", title: "DCF & Comparable Companies Valuation",
+    desc: "Discounted cash flow valuation with WACC build-up, sensitivity tables and a trading comps cross-check.",
+    tags: ["Excel", "Python"], repo: "", demo: "" },
+  { cat: "Financial Statements", title: "Automated Financial Statement Preparation",
+    desc: "Turns a raw trial balance into formatted P&L, balance sheet and notes using Python mapping rules.",
+    tags: ["Python", "pandas", "openpyxl"], repo: "", demo: "" },
+  { cat: "Consolidation", title: "Multi-Entity Consolidation Workflow",
+    desc: "Consolidates subsidiaries with intercompany eliminations, FX translation and an audit-ready reconciliation.",
+    tags: ["Python", "Power Query"], repo: "", demo: "" },
+  { cat: "Automation", title: "Month-End Close Automation",
+    desc: "Scripts that pull, reconcile and validate ledger data, cutting manual close steps and flagging exceptions.",
+    tags: ["Python", "Process Optimization"], repo: "", demo: "" },
+  { cat: "Dashboards", title: "Finance KPI Dashboard",
+    desc: "Interactive Power BI dashboard tracking revenue, margins, cash conversion and budget vs actual variance.",
+    tags: ["Power BI", "DAX"], repo: "", demo: "" }
+];
+
+const grid = document.getElementById("grid");
+const filters = document.getElementById("filters");
+const cats = ["All", ...new Set(projects.map(p => p.cat))];
+let active = "All";
+
+function link(url, label) {
+  return url ? `<a href="${url}" target="_blank" rel="noopener">${label}</a>` : "";
+}
+function render() {
+  grid.innerHTML = projects.filter(p => active === "All" || p.cat === active).map(p => `
+    <article class="card">
+      <span class="cat">${p.cat}</span>
+      <h3>${p.title}</h3>
+      <p>${p.desc}</p>
+      <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
+      <div class="links">${(p.repo || p.demo) ? link(p.repo, "Code →") + link(p.demo, "Live demo →") : '<span class="soon">Coming soon</span>'}</div>
+    </article>`).join("");
+  filters.innerHTML = cats.map(c => `<button class="${c === active ? "active" : ""}" data-c="${c}">${c}</button>`).join("");
+}
+filters.addEventListener("click", e => { if (e.target.dataset.c) { active = e.target.dataset.c; render(); } });
+document.getElementById("yr").textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
