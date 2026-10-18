@@ -129,10 +129,12 @@
 const projects = [
   { cat: "Financial Modelling", title: "Three-Statement Financial Model",
     desc: "Five-year linked income statement, balance sheet and cash flow forecast with base, upside and downside scenarios and automated balance checks.",
-    tags: ["Excel", "Python", "Scenario Analysis"], repo: "https://github.com/MuhammedAnshajK/three-statement-model", demo: "" },
+    tags: ["Excel", "Python", "Scenario Analysis"], repo: "https://github.com/MuhammedAnshajK/three-statement-model", demo: "",
+    file: "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/three_statement_model.xlsx" },
   { cat: "Valuation", title: "DCF & Comparable Companies Valuation",
     desc: "DCF (perpetuity growth and exit multiple) with a CAPM-based WACC, sensitivity table and trading comparables, summarised in a football field chart.",
-    tags: ["Excel", "Python", "Valuation"], repo: "https://github.com/MuhammedAnshajK/dcf-valuation", demo: "" },
+    tags: ["Excel", "Python", "Valuation"], repo: "https://github.com/MuhammedAnshajK/dcf-valuation", demo: "",
+    file: "https://github.com/MuhammedAnshajK/dcf-valuation/raw/main/dcf_valuation.xlsx" },
   { cat: "Financial Statements", title: "Automated Financial Statement Preparation",
     desc: "Turns a raw trial balance into formatted P&L, balance sheet and notes using Python mapping rules.",
     tags: ["Python", "pandas", "openpyxl"], repo: "", demo: "" },
@@ -162,7 +164,7 @@ function render() {
       <h3>${p.title}</h3>
       <p>${p.desc}</p>
       <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
-      <div class="links">${(p.repo || p.demo) ? link(p.repo, "Code →") + link(p.demo, "Live demo →") : '<span class="soon">Coming soon</span>'}</div>
+      <div class="links">${(p.repo || p.demo || p.file) ? link(p.repo, "View project →") + link(p.file, "Download Excel ↓") + link(p.demo, "Live demo →") : '<span class="soon">Coming soon</span>'}</div>
     </article>`).join("");
   filters.innerHTML = cats.map(c => `<button class="${c === active ? "active" : ""}" data-c="${c}">${c}</button>`).join("");
 }
