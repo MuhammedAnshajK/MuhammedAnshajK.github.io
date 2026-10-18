@@ -8,7 +8,7 @@ A portfolio of finance projects built with Excel, Python and Power BI.
 
 | Area | Project | Tools | Status |
 |---|---|---|---|
-| Financial Modelling | Three-Statement Financial Model | Excel | Coming soon |
+| Financial Modelling | [Three-Statement Financial Model](https://github.com/MuhammedAnshajK/three-statement-model) | Excel, Python | Done |
 | Valuation | DCF & Comparable Companies Valuation | Excel, Python | Coming soon |
 | Financial Statements | Automated Financial Statement Preparation | Python, pandas | Coming soon |
 | Consolidation | Multi-Entity Consolidation Workflow | Python, Power Query | Coming soon |
