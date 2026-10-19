@@ -13,7 +13,7 @@ A portfolio of finance projects built with Excel, Python and Power BI.
 | Financial Statements | [Automated Financial Statement Preparation](https://github.com/MuhammedAnshajK/financial-statement-automation) | Python, pandas | Done |
 | Consolidation | [Multi-Entity Consolidation Workflow](https://github.com/MuhammedAnshajK/consolidation-workflow) | Python, pandas | Done |
 | Automation | [Month-End Close Automation](https://github.com/MuhammedAnshajK/month-end-close-automation) | Python, pandas | Done |
-| Dashboards | Finance KPI Dashboard | Power BI, DAX | Coming soon |
+| Dashboards | [Finance KPI Dashboard](https://github.com/MuhammedAnshajK/finance-kpi-dashboard) ([live](https://muhammedanshajk.github.io/kpi-dashboard/)) | Power BI, DAX, JavaScript | Done |
 
 ## Updating the site
 
