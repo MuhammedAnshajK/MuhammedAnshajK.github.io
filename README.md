@@ -12,7 +12,7 @@ A portfolio of finance projects built with Excel, Python and Power BI.
 | Valuation | [DCF & Comparable Companies Valuation](https://github.com/MuhammedAnshajK/dcf-valuation) | Excel, Python | Done |
 | Financial Statements | [Automated Financial Statement Preparation](https://github.com/MuhammedAnshajK/financial-statement-automation) | Python, pandas | Done |
 | Consolidation | [Multi-Entity Consolidation Workflow](https://github.com/MuhammedAnshajK/consolidation-workflow) | Python, pandas | Done |
-| Automation | Month-End Close Automation | Python | Coming soon |
+| Automation | [Month-End Close Automation](https://github.com/MuhammedAnshajK/month-end-close-automation) | Python, pandas | Done |
 | Dashboards | Finance KPI Dashboard | Power BI, DAX | Coming soon |
 
 ## Updating the site
