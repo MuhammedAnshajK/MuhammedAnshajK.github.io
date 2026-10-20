@@ -128,10 +128,18 @@
 // Edit this list to add or update projects. Leave repo/demo as "" and omit files to show "Coming soon".
 // files: [label, direct download URL] pairs, shown as download buttons.
 const projects = [
-  { cat: "Financial Modelling", title: "Three-Statement Financial Model",
-    desc: "Five-year linked income statement, balance sheet and cash flow forecast with base, upside and downside scenarios and automated balance checks.",
-    tags: ["Excel", "Python", "Scenario Analysis"], repo: "https://github.com/MuhammedAnshajK/three-statement-model", demo: "",
-    files: [["Excel", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/three_statement_model.xlsx"], ["PDF", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/three_statement_model.pdf"], ["Script", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/build_model.py"]] },
+  { cat: "Financial Analysis", title: "Nike Financial Statement Analysis (FY2022-FY2026)",
+    desc: "Five years of Nike's 10-K results analysed: revenue and profit trends, common-size statements, 41 ratios covering margins, liquidity, leverage, efficiency and cash flow, with written insights.",
+    tags: ["Excel", "Python", "Ratio Analysis"], repo: "https://github.com/MuhammedAnshajK/financial-statement-analysis", demo: "",
+    files: [["Excel", "https://github.com/MuhammedAnshajK/financial-statement-analysis/raw/main/nike_financial_analysis.xlsx"], ["PDF", "https://github.com/MuhammedAnshajK/financial-statement-analysis/raw/main/nike_financial_analysis.pdf"], ["Data CSV", "https://github.com/MuhammedAnshajK/financial-statement-analysis/raw/main/data/nike_financials.csv"], ["Script", "https://github.com/MuhammedAnshajK/financial-statement-analysis/raw/main/build_analysis.py"]] },
+  { cat: "Financial Analysis", title: "Budget vs Actual Variance Analysis",
+    desc: "Full-year budget vs actual review: revenue, cost and profit variances with materiality flags, price and volume analysis, a flexible budget, a profit bridge and management commentary on the reasons.",
+    tags: ["Excel", "Python", "FP&A"], repo: "https://github.com/MuhammedAnshajK/budget-vs-actual-analysis", demo: "",
+    files: [["Excel", "https://github.com/MuhammedAnshajK/budget-vs-actual-analysis/raw/main/budget_vs_actual_2025.xlsx"], ["PDF", "https://github.com/MuhammedAnshajK/budget-vs-actual-analysis/raw/main/budget_vs_actual_2025.pdf"], ["Script", "https://github.com/MuhammedAnshajK/budget-vs-actual-analysis/raw/main/build_analysis.py"]] },
+  { cat: "Financial Modelling", title: "Nike Five-Year Forecast (Three-Statement Model)",
+    desc: "Linked income statement, balance sheet and cash flow for Nike built from its 10-K, forecasting FY2027 to FY2031 with a revenue build by region, base, upside and downside scenarios and automated checks.",
+    tags: ["Excel", "Python", "Forecasting"], repo: "https://github.com/MuhammedAnshajK/three-statement-model", demo: "",
+    files: [["Excel", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/nike_forecast_model.xlsx"], ["PDF", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/nike_forecast_model.pdf"], ["Script", "https://github.com/MuhammedAnshajK/three-statement-model/raw/main/build_model.py"]] },
   { cat: "Valuation", title: "DCF & Comparable Companies Valuation",
     desc: "DCF (perpetuity growth and exit multiple) with a CAPM-based WACC, sensitivity table and trading comparables, summarised in a football field chart.",
     tags: ["Excel", "Python", "Valuation"], repo: "https://github.com/MuhammedAnshajK/dcf-valuation", demo: "",
@@ -151,7 +159,11 @@ const projects = [
   { cat: "Dashboards", title: "Finance KPI Dashboard",
     desc: "Interactive dashboard tracking revenue vs budget, gross and EBITDA margin, DSO and regional performance, with region and period filters. Includes a Power BI version with DAX measures.",
     tags: ["Power BI", "DAX", "JavaScript"], repo: "https://github.com/MuhammedAnshajK/finance-kpi-dashboard", demo: "https://muhammedanshajk.github.io/kpi-dashboard/",
-    files: [["Data CSV", "https://github.com/MuhammedAnshajK/finance-kpi-dashboard/raw/main/data/finance_monthly.csv"], ["DAX measures", "https://github.com/MuhammedAnshajK/finance-kpi-dashboard/raw/main/powerbi/measures.dax"], ["Dashboard HTML", "https://github.com/MuhammedAnshajK/finance-kpi-dashboard/raw/main/dashboard/index.html"]] }
+    files: [["Data CSV", "https://github.com/MuhammedAnshajK/finance-kpi-dashboard/raw/main/data/finance_monthly.csv"], ["DAX measures", "https://github.com/MuhammedAnshajK/finance-kpi-dashboard/raw/main/powerbi/measures.dax"], ["Dashboard HTML", "https://github.com/MuhammedAnshajK/finance-kpi-dashboard/raw/main/dashboard/index.html"]] },
+  { cat: "Dashboards", title: "Two-Way Google Sheets Dashboard",
+    desc: "Google Sheets dashboard with region and metric filters, KPI tiles and charts, where numbers can be edited on the dashboard or the data sheet and update in both, using Apps Script.",
+    tags: ["Google Sheets", "Apps Script", "Dashboard"], repo: "https://github.com/MuhammedAnshajK/google-sheets-dashboard", demo: "",
+    files: [["Apps Script", "https://github.com/MuhammedAnshajK/google-sheets-dashboard/raw/main/Code.gs"]] }
 ];
 
 const grid = document.getElementById("grid");
