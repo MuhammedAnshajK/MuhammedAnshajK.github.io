@@ -11,7 +11,7 @@ A portfolio of finance projects built with Excel, Python and Power BI.
 | Financial Analysis | [Nike Financial Statement Analysis](https://github.com/MuhammedAnshajK/financial-statement-analysis) | Excel, Python | Done |
 | Financial Analysis | [Budget vs Actual Variance Analysis](https://github.com/MuhammedAnshajK/budget-vs-actual-analysis) | Excel, Python | Done |
 | Financial Modelling | [Nike Five-Year Forecast](https://github.com/MuhammedAnshajK/three-statement-model) | Excel, Python | Done |
-| Valuation | [DCF & Comparable Companies Valuation](https://github.com/MuhammedAnshajK/dcf-valuation) | Excel, Python | Done |
+| Valuation | [Nike Valuation: DCF & Comps](https://github.com/MuhammedAnshajK/dcf-valuation) | Excel, Python | Done |
 | Financial Statements | [Automated Financial Statement Preparation](https://github.com/MuhammedAnshajK/financial-statement-automation) | Python, pandas | Done |
 | Consolidation | [Multi-Entity Consolidation Workflow](https://github.com/MuhammedAnshajK/consolidation-workflow) | Python, pandas | Done |
 | Automation | [Month-End Close Automation](https://github.com/MuhammedAnshajK/month-end-close-automation) | Python, pandas | Done |
